@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CalendarView.swift
 //  Tangle Free
 //
 //  Created by David Juarez on 2/25/23.
@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct CalendarView: View {
     var body: some View {
-//        Color.red
+        Color.blue
         
         TabView {
             MainView()
@@ -42,8 +41,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CalendarView()
     }
 }
