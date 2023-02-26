@@ -50,62 +50,62 @@ struct AccountView: View {
                 .frame(width: 350, height:1)
                 .background(Color.gray)
             
-            HStack {
-                Text("Orders")
-                    .fontWeight(.light)
-                    .padding(.leading, 25)
-                    .padding(.bottom, 5)
-                Spacer()
+            Group {
+                HStack {
+                    Text("Orders")
+                        .fontWeight(.light)
+                        .padding(.top, 20)
+                        .padding(.leading, 25)
+                        .padding(.bottom, 5)
+                    Spacer()
+                }
+                
+                HStack {
+                    Text("Payment")
+                        .fontWeight(.light)
+                        .padding(.leading, 25)
+                        .padding(.bottom, 5)
+                    Spacer()
+                }
+                
+                HStack {
+                    Text("Notifications")
+                        .fontWeight(.light)
+                        .padding(.leading, 25)
+                        .padding(.bottom, 5)
+                    Spacer()
+                }
+                
+                HStack {
+                    Text ("Settings")
+                        .fontWeight(.light)
+                        .padding(.leading, 25)
+                        .padding(.bottom, 5)
+                    Spacer()
+                }
+                
+                HStack {
+                    Text("Privacy Policy")
+                        .fontWeight(.light)
+                        .padding(.leading, 25)
+                    Spacer()
+                }
             }
+            .font(.system(size: 25))
             
-            HStack {
-                Text("Payment")
-                    .fontWeight(.light)
-                    .padding(.leading, 25)
-                    .padding(.bottom, 5)
+            VStack {
                 Spacer()
-            }
-            
-            HStack {
-                Text("Privacy")
-                    .fontWeight(.light)
-                    .padding(.leading, 25)
-                    .padding(.bottom, 5)
-                Spacer()
-            }
-            
-//            HStack {
-//                Text("Notifications")
-//                    .fontWeight(.light)
-//                    .padding(.leading, 25)
-//                    .padding(.bottom, 5)
-//                Spacer()
-//            }
-            
-//            HStack {
-//                Text("Notifications")
-//                    .fontWeight(.light)
-//                    .padding(.leading, 25)
-//                    .padding(.bottom, 5)
-//                Spacer()
-//            }
-            
-//            HStack {
-//                Text("Settings")
-//                    .fontWeight(.light)
-//                    .padding(.leading, 25)
-//                    .padding(.bottom, 5)
-//                Spacer()
-//            }
-            
-            HStack {
-                Text("Privacy Policy")
-                    .fontWeight(.light)
-                    .padding(.leading, 25)
+                Text("Log Out")
+                
+                    .font(.system(size: 22))
+                    .padding()
+                    .padding([.leading, .trailing], 100)
+                    .border(Color.red, width: 2)
+                    .background(Color("lightRed"))
+                    
                 Spacer()
             }
             Spacer()
-            
         }
 
     }
