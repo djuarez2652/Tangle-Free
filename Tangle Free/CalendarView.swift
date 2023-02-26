@@ -17,18 +17,10 @@ struct CalendarView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.leading, 25)
-                    .padding(.bottom, 10)
+                    .padding(.bottom, -10)
                 Spacer()
             }
             
-            Text(selectedDate.formatted(date: .abbreviated, time: .omitted))
-                .font(.system(size: 20))
-                .bold()
-                .foregroundColor(Color.accentColor)
-
-                .animation(.spring(), value: selectedDate)
-                .frame(width: 500)
-            Divider().frame(height: 1)
             DatePicker("Select Date", selection: $selectedDate, displayedComponents: [.date])
                 .padding(.horizontal)
                 .datePickerStyle(.graphical)
