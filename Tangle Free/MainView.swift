@@ -31,119 +31,191 @@ struct MainView: View {
                             }
 //                            Acc 1
                             HStack {
-                                Image(systemName: "person.crop.circle.fill")
+                                Image(systemName: "clock.arrow.circlepath")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 35, height: 35)
+                                
                                 VStack (alignment: .leading){
-                                    Text ("Name 1")
+                                    Text ("Terese T.")
                                         .fontWeight(.bold)
                                     Text("Hair Stylist")
                                         .italic()
                                 }
                                 
+                                
                                 Spacer()
+                                Text("Review Here")
+                                    .italic()
+                                    .padding(.trailing, 30)
                             }
-                            .padding(.leading, 30)
+                            .padding(.leading, 20)
                             .padding(.top, 5)
                             
 
                             
                             HStack {
-                                Image(systemName: "person.crop.circle.fill")
+                                Image(systemName: "clock.arrow.circlepath")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 35, height: 35)
+                                
                                 VStack (alignment: .leading){
-                                    Text ("Name 2")
+                                    Text ("Nails4You")
                                         .fontWeight(.bold)
-                                    Text("Lashes")
+                                    Text("Nails")
                                         .italic()
                                     
                                 }
                                 
                                 Spacer()
+                                Text("Review Here")
+                                    .italic()
+                                    .padding(.trailing, 30)
                             }
-                            .padding(.leading, 30)
-                            .padding(.top, 5)
-                            
-                            HStack {
-                                Image(systemName: "person.crop.circle.fill")
-                                    
-                                VStack (alignment: .leading){
-                                    Text ("Name 3")
-                                        .fontWeight(.bold)
-                                    Text("Nails, Hair Stylist")
-                                        .italic()
-                                    
-                                }
-                                
-                                Spacer()
-                            }
-                            .padding(.leading, 30)
-                            .padding(.top, 5)
-                            
-                            HStack {
-                                Image(systemName: "person.crop.circle.fill")
-                                VStack (alignment: .leading){
-                                    Text ("Name 4")
-                                        .fontWeight(.bold)
-                                    Text("Lashes, Hair Stylist, Nails")
-                                        .italic()
-                                    
-                                }
-                                
-                                Spacer()
-                            }
-                            .padding(.leading, 30)
+                            .padding(.leading, 20)
                             .padding(.top, 5)
 
-                            HStack {
-                                Text("Suggestions")
-                                    .fontWeight(.bold)
-                                    .font(.title)
-                                    .padding(.leading, 25)
-                                Spacer()
+
+                            Group{
+                                HStack {
+                                    Text("Suggestions")
+                                        .fontWeight(.bold)
+                                        .font(.title)
+                                        .padding(.leading, 25)
+                                    Spacer()
+                                    
+                                }
+                                .padding(.top, 10)
+                                /////////////////////////////
+                                ///
+                                ///
+                                HStack {
+                                    Image("hair_pfp")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 40, height: 40)
+                                    
+                                    VStack (alignment: .leading){
+                                        Text ("Mane Connect")
+                                            .fontWeight(.bold)
+                                        Text("Hair Stylist, $$$")
+                                            .italic()
+                                    }
+                                    VStack{
+                                        HStack{
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, 60)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star")
+                                                .padding(.leading, -8)
+                                        }
+                                        Text("0.7 miles away")
+                                            .padding(.leading, 43)
+                                    }
+                                    
+                                    Spacer()
+                                }
+                                .padding(.leading, 20)
+                                .padding(.top, 5)
                                 
+                                HStack {
+                                    Image("nail_pfp")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 40, height: 40)
+                                    
+                                    VStack (alignment: .leading){
+                                        Text ("Alyssa's Nails")
+                                            .fontWeight(.bold)
+                                        Text("Nail Tech, $")
+                                            .italic()
+                                    }
+                                    VStack{
+                                        HStack{
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, 68)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star.leadinghalf.filled")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                        }
+                                        Text("1.2 miles away")
+                                            .padding(.leading, 46)
+                                    }
+                                    
+                                    Spacer()
+                                }
+                                .padding(.leading, 20)
+                                .padding(.top, 5)
+                                HStack {
+                                    Image("lash_pfp")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 40, height: 40)
+                                    
+                                    VStack (alignment: .leading){
+                                        Text ("Perfect Lashes")
+                                            .fontWeight(.bold)
+                                        Text("Lash Tech, $$")
+                                            .italic()
+                                    }
+                                    VStack{
+                                        HStack{
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, 60)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star.fill")
+                                                .foregroundColor(Color("darkYellow"))
+                                                .padding(.leading, -8)
+                                            Image(systemName: "star")
+                                                .padding(.leading, -8)
+                                        }
+                                        Text("2.0 miles away")
+                                            .padding(.leading, 43)
+                                    }
+                                    Spacer()
+                                }
+                                .padding(.leading, 20)
+                                .padding(.top, 5)
+                                
+                                Spacer()
                             }
-                            .padding(.top, 10)
                             
-                            HStack {
-                                Image(systemName: "person.crop.circle.fill")
-                                VStack (alignment: .leading){
-                                    Text ("Name 1")
-                                        .fontWeight(.bold)
-                                    Text("Hair Stylist")
-                                        .italic()
-                                }
+                            Image("google maps")
+                                .resizable()
+                                //.padding(.leading, 15)
+                                //.padding(.trailing, 15)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 350, height: 200)
+                                //.border(Color.black)
                                 
-                                Spacer()
-                            }
-                            .padding(.leading, 30)
-                            .padding(.top, 5)
                             
-                            HStack {
-                                Image(systemName: "person.crop.circle.fill")
-                                VStack (alignment: .leading){
-                                    Text ("Name 1")
-                                        .fontWeight(.bold)
-                                    Text("Hair Stylist")
-                                        .italic()
-                                }
-                                
-                                Spacer()
-                            }
-                            .padding(.leading, 30)
-                            .padding(.top, 5)
-                            HStack {
-                                Image(systemName: "person.crop.circle.fill")
-                                VStack (alignment: .leading){
-                                    Text ("Name 1")
-                                        .fontWeight(.bold)
-                                    Text("Hair Stylist")
-                                        .italic()
-                                }
-                                
-                                Spacer()
-                            }
-                            .padding(.leading, 30)
-                            .padding(.top, 5)
-            
-                            Spacer()
+                            
                             
                         }
                         .navigationTitle("Appointments")
