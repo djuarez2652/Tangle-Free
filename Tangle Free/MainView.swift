@@ -21,6 +21,12 @@ struct MainView: View {
                     NavigationView {
 //                      Accounts
                         VStack {
+                            HStack {
+                                Text("Recents")
+                                    .fontWeight(.bold)
+                                Spacer()
+                                
+                            }
 //                            Acc 1
                             HStack {
                                 Image(systemName: "person.crop.circle.fill")
@@ -35,6 +41,8 @@ struct MainView: View {
                             }
                             .padding(.leading, 30)
                             .padding(.top, 5)
+                            
+
                             
                             HStack {
                                 Image(systemName: "person.crop.circle.fill")
