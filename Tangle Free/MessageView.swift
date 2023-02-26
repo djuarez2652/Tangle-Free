@@ -25,6 +25,7 @@ struct MessageView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50, height: 50)
+                
                     //.border(.blue)
                     //.resizable()
                     //.aspectRatio(contentMode: .fit)
