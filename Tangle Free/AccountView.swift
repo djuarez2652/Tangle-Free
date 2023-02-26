@@ -9,7 +9,25 @@ import SwiftUI
 
 struct AccountView: View {
     var body: some View {
-        Color.purple
+        VStack {
+            HStack {
+                Text("Account")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.leading, 25)
+                    .padding(.top, 15)
+                Spacer()
+            }
+            
+            Image(systemName: "person.crop.circle.fill")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 130, height: 130)
+                .foregroundColor(Color("mint"))
+            Spacer()
+            
+        }
+
     }
 }
 
