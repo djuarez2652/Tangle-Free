@@ -16,6 +16,7 @@ struct MainView: View {
         
         if !showAppt {
             
+            
             ZStack {
                 VStack {
                     NavigationView {

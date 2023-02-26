@@ -131,7 +131,7 @@ struct MessageView: View {
                         VStack (alignment: .leading){
                             Text ("Gene C.")
                                 .font(.title2)
-                                .fontWeight(.bold)
+//                                .fontWeight(.bold)
                             
                             Text("Order is on its way.")
                             //.font(.title)
@@ -166,7 +166,7 @@ struct MessageView: View {
                         VStack (alignment: .leading){
                             Text ("Lashes Galore")
                                 .font(.title2)
-                                .fontWeight(.bold)
+//                                .fontWeight(.bold)
                             
                             Text("Thank you for booking with us")
                             //.font(.title)
@@ -230,7 +230,7 @@ struct MessageView: View {
                         VStack (alignment: .leading){
                             Text ("Fatima L.")
                                 .font(.title2)
-                                .fontWeight(.bold)
+//                                .fontWeight(.bold)
                             
                             Text("Product has shipped!")
                             
