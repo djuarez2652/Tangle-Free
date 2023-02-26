@@ -23,9 +23,11 @@ struct CalendarView: View {
                 .padding(.horizontal)
                 .datePickerStyle(.graphical)
             Divider()
+            Spacer()
         }
         .padding(.vertical, 100)
     }
+    
 }
 
 struct CalendarView_Previews: PreviewProvider {

@@ -24,6 +24,8 @@ struct MainView: View {
                             HStack {
                                 Text("Recents")
                                     .fontWeight(.bold)
+                                    .font(.title)
+                                    .padding(.leading, 25)
                                 Spacer()
                                 
                             }
@@ -90,6 +92,16 @@ struct MainView: View {
                             .padding(.leading, 30)
                             .padding(.top, 5)
                             Spacer()
+                            HStack {
+                                Text("Suggestions")
+                                    .fontWeight(.bold)
+                                    .font(.title)
+                                    .padding(.leading, 25)
+                                Spacer()
+                                
+                            }
+                            Spacer()
+                            
                         }
                         .navigationTitle("Appointments")
                         
