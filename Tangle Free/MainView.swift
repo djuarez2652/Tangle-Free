@@ -129,7 +129,6 @@ struct MainView: View {
                             }
                             .padding(.leading, 30)
                             .padding(.top, 5)
-                            
                             HStack {
                                 Image(systemName: "person.crop.circle.fill")
                                 VStack (alignment: .leading){
@@ -143,7 +142,7 @@ struct MainView: View {
                             }
                             .padding(.leading, 30)
                             .padding(.top, 5)
-                            
+            
                             Spacer()
                             
                         }
