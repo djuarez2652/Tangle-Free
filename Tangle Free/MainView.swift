@@ -119,6 +119,7 @@ struct MainView: View {
                                                 .padding(.leading, -8)
                                             Image(systemName: "star")
                                                 .padding(.leading, -8)
+                                                .foregroundColor(Color("darkYellow"))
                                         }
                                         Text("0.7 miles away")
                                             .padding(.leading, 43)
@@ -195,6 +196,7 @@ struct MainView: View {
                                                 .padding(.leading, -8)
                                             Image(systemName: "star")
                                                 .padding(.leading, -8)
+                                                .foregroundColor(Color("darkYellow"))
                                         }
                                         Text("2.0 miles away")
                                             .padding(.leading, 43)
