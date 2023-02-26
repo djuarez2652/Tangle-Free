@@ -41,6 +41,7 @@ struct AccountView: View {
                 Image(systemName: "star.fill")
                     .foregroundColor(Color("darkYellow"))
                 Image(systemName: "star")
+                    .foregroundColor(Color("darkYellow"))
                     
                     
                 Spacer()
