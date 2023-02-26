@@ -18,34 +18,78 @@ struct MainView: View {
             
             ZStack {
                 VStack {
-                    HStack {
-                        Spacer()
-                        Button {
-                            showAppt = true
-                        } label: {
-                            Text("Appointment")
-                                .font(.title)
-                        }
-                        Spacer()
-                        Button {
-                            return
-                        } label: {
-                            Text("Shop")
-                                .font(.title)
-                        }
-                        Spacer()
-                    }
-                    .padding(.top, 5.0)
-                    //                .padding(.bottom, -5)
-                    .zIndex(1)
-                    
                     NavigationView {
-                        Text("hi")
+//                      Accounts
+                        VStack {
+//                            Acc 1
+                            HStack {
+                                Image(systemName: "person.crop.circle.fill")
+                                VStack (alignment: .leading){
+                                    Text ("Name 1")
+                                        .fontWeight(.bold)
+                                    Text("Hair Stylist")
+                                        .italic()
+                                }
+                                
+                                Spacer()
+                            }
+                            .padding(.leading, 30)
+                            .padding(.top, 5)
+                            
+                            HStack {
+                                Image(systemName: "person.crop.circle.fill")
+                                VStack (alignment: .leading){
+                                    Text ("Name 2")
+                                        .fontWeight(.bold)
+                                    Text("Lashes")
+                                        .italic()
+                                    
+                                }
+                                
+                                Spacer()
+                            }
+                            .padding(.leading, 30)
+                            .padding(.top, 5)
+                            
+                            HStack {
+                                Image(systemName: "person.crop.circle.fill")
+                                    
+                                VStack (alignment: .leading){
+                                    Text ("Name 3")
+                                        .fontWeight(.bold)
+                                    Text("Nails, Hair Stylist")
+                                        .italic()
+                                    
+                                }
+                                
+                                Spacer()
+                            }
+                            .padding(.leading, 30)
+                            .padding(.top, 5)
+                            
+                            HStack {
+                                Image(systemName: "person.crop.circle.fill")
+                                VStack (alignment: .leading){
+                                    Text ("Name 4")
+                                        .fontWeight(.bold)
+                                    Text("Lashes, Hair Stylist, Nails")
+                                        .italic()
+                                    
+                                }
+                                
+                                Spacer()
+                            }
+                            .padding(.leading, 30)
+                            .padding(.top, 5)
+                            Spacer()
+                        }
+                        .navigationTitle("Appointments")
                         
                     }
-                    .padding(.top, -15.0)
+                    
                     .searchable(
-                        text: $searchText, prompt: "Search for Appointment")
+                        text: $searchText)
+                    
                 }
             }
         }
